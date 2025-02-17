@@ -2,38 +2,33 @@ from pyflink.common.serialization import SimpleStringSchema
 from pyflink.datastream.connectors.kafka import (
     KafkaRecordSerializationSchema,
     KafkaSink,
+    DeliveryGuarantee
 )
+from typing import Optional
+import logging
 
+logger = logging.getLogger(__name__)
 
-def build_sink(
-    topic: str = "output-topic",
-    bootstrap_servers: str = "kafka:9092",
-) -> KafkaSink:
+def build_sink(topic: str, bootstrap_servers: str) -> Optional[KafkaSink]:
     """
-    Build a Kafka sink.
-
-    :param topic: The topic to write to.
-    :param bootstrap_servers: The bootstrap servers.
-    :return: The Kafka sink.
+    Create a Kafka sink with error handling
     """
-    print("topic", topic)
-    print("bootstrap_servers", bootstrap_servers)
-    test = KafkaSink.builder().set_record_serializer(
-            KafkaRecordSerializationSchema.builder()
-            .set_topic(topic)
-            .set_value_serialization_schema(SimpleStringSchema())
-            .build()
-        ).build()
-    
-    print("test", test)
-    return (
-        KafkaSink.builder()
-        .set_bootstrap_servers(bootstrap_servers)
-        .set_record_serializer(
-            KafkaRecordSerializationSchema.builder()
-            .set_topic(topic)
-            .set_value_serialization_schema(SimpleStringSchema())
+    try:
+        logger.info(f"Creating Kafka sink for topic: {topic}")
+        print(f"Creating Kafka sink for topic: {topic}")
+        sink = (
+            KafkaSink.builder()
+            .set_bootstrap_servers(bootstrap_servers)
+            .set_record_serializer(
+                KafkaRecordSerializationSchema.builder()
+                .set_topic(topic)
+                .set_value_serialization_schema(SimpleStringSchema())
+                .build()
+            )
             .build()
         )
-        .build()
-    )
+        logger.info("Kafka sink created successfully")
+        return sink
+    except Exception as e:
+        logger.error(f"Failed to create Kafka sink: {str(e)}", exc_info=True)
+        raise

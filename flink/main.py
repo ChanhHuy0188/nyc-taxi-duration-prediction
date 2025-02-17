@@ -1,5 +1,6 @@
 import argparse
 from typing import Dict, Type
+import logging
 
 from dotenv import find_dotenv, load_dotenv
 from pyflink.datastream import StreamExecutionEnvironment
@@ -7,6 +8,9 @@ from pyflink.datastream import StreamExecutionEnvironment
 from .base import FlinkJob
 
 load_dotenv(find_dotenv())
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 
 def get_available_jobs() -> Dict[str, Type[FlinkJob]]:
@@ -47,9 +51,9 @@ def main():
         env = StreamExecutionEnvironment.get_execution_environment()
         job.create_pipeline(env)
         env.execute(f"{job.job_name} Pipeline")
-        print(f"Job {job.job_name} has been started successfully!")
+        logger.info(f"Job {job.job_name} has been started successfully!")
     except Exception as e:
-        print(f"Error running job {args.job_name}: {str(e)}")
+        logger.error(f"Error running job {args.job_name}: {str(e)}", exc_info=True)
         raise
 
 

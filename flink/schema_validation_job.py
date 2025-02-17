@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 from typing import Any, Dict, Tuple
 
-from kafka.admin import KafkaAdminClient
+from kafka.admin import KafkaAdminClient, NewTopic
 from kafka.errors import KafkaError
 from pyflink.common import WatermarkStrategy
 from pyflink.common.typeinfo import Types
@@ -256,14 +256,33 @@ class SchemaValidationJob(FlinkJob):
             )
         return self._admin_client
 
+    def create_topic(self, topic: str, num_partitions: int = 3, replication_factor: int = 1) -> bool:
+        """Create a Kafka topic if it doesn't exist."""
+        try:
+            new_topic = NewTopic(
+                name=topic,
+                num_partitions=num_partitions,
+                replication_factor=replication_factor
+            )
+            self.admin_client.create_topics([new_topic])
+            logger.info(f"Successfully created topic: {topic}")
+            return True
+        except Exception as e:
+            if "TopicAlreadyExistsError" in str(e):
+                logger.info(f"Topic {topic} already exists")
+                return True
+            logger.error(f"Error creating topic {topic}: {str(e)}")
+            return False
+
     def check_topic_exists(self, topic: str) -> bool:
-        """Check if a Kafka topic exists."""
+        """Check if a Kafka topic exists and create it if it doesn't."""
         try:
             topics = self.admin_client.list_topics()
             exists = topic in topics
             if not exists:
-                logger.warning(f"Topic {topic} does not exist")
-            return exists
+                logger.info(f"Topic {topic} does not exist, creating it...")
+                return self.create_topic(topic)
+            return True
         except KafkaError as e:
             logger.error(f"Error checking topic {topic}: {str(e)}")
             return False

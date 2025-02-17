@@ -876,6 +876,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "apache-flink" },
+    { name = "apache-flink-libraries" },
     { name = "avro-python3" },
     { name = "boto3" },
     { name = "botocore" },
@@ -899,6 +900,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "apache-flink", specifier = "==1.17.1" },
+    { name = "apache-flink-libraries", specifier = "==1.17.1" },
     { name = "avro-python3", specifier = "==1.8.1" },
     { name = "boto3", specifier = "==1.35.74" },
     { name = "botocore", specifier = ">=1.35.77" },
