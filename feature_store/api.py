@@ -6,6 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from feast import FeatureStore
 from pydantic import BaseModel, Field
 import pandas as pd
+import tracemalloc
+tracemalloc.start()
 
 store = FeatureStore(repo_path=".")
 

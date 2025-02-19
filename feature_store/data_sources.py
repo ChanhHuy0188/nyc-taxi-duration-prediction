@@ -1,11 +1,12 @@
 import os
 from datetime import timedelta
 
-from feast import KafkaSource
+from feast import KafkaSource, Entity, Feature, FeatureView, StreamFeatureView
 from feast.data_format import JsonFormat
 from feast.infra.offline_stores.contrib.postgres_offline_store.postgres_source import (
     PostgreSQLSource,
 )
+from feast.types import Float32, Int64
 
 
 def read_sql_file(filename):
@@ -34,7 +35,7 @@ location_stats_source = PostgreSQLSource(
 realtime_trips_stream = KafkaSource(
     name="realtime_trips_stream",
     kafka_bootstrap_servers=os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092"),
-    topic=os.getenv("KAFKA_TRIPS_TOPIC", "nyc.taxi.trips.validated"),
+    topic=os.getenv("KAFKA_TRIPS_TOPIC", "tracking.data.validated"),
     timestamp_field="event_timestamp",
     batch_source=historical_trips_source,
     message_format=JsonFormat(
@@ -72,7 +73,7 @@ realtime_trips_stream = KafkaSource(
 location_updates_stream = KafkaSource(
     name="location_updates_stream",
     kafka_bootstrap_servers=os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092"),
-    topic=os.getenv("KAFKA_LOCATIONS_TOPIC", "nyc.taxi.locations"),
+    topic=os.getenv("KAFKA_LOCATIONS_TOPIC", "tracking.data.validated"),
     timestamp_field="event_timestamp",
     batch_source=location_stats_source,
     message_format=JsonFormat(
@@ -98,3 +99,5 @@ location_updates_stream = KafkaSource(
     tags={"team": "ml_team", "product": "demand_prediction"},
     watermark_delay_threshold=timedelta(minutes=1),
 )
+
+# This file should define your data sources for both offline and online stores

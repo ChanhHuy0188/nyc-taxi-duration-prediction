@@ -8,12 +8,12 @@ echo "Starting Feature Store Setup..."
 # Create virtual environment if it doesn't exist
 if [ ! -d ".venv" ]; then
     echo "Setting up virtual environment..."
-    python -m venv .venv
+    python3 -m venv venv
 fi
 
 # Activate virtual environment and install dependencies
 echo "Installing dependencies..."
-source .venv/bin/activate
+source venv/bin/activate
 pip install -r requirements.txt
 
 # Wait for PostgreSQL to be ready

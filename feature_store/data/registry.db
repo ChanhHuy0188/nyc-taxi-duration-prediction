@@ -1,0 +1,416 @@
+
+p
+Q
+payment_typePayment method identifier"payment_type_idJduration_prediction
+öåÔ½°èßP´éÔ½èß°ù
+d
+E
+	vendor_idTaxi vendor identifier"	vendor_idJduration_prediction
+öåÔ½¸ƒäP´éÔ½È–¾ù
+j
+K
+	rate_codeTaxi rate code identifier"rate_code_idJduration_prediction
+öåÔ½¨ÜÖP´éÔ½ÈûÆù
+w
+X
+pickup_locationPickup location identifier"pickup_location_idJduration_prediction
+öåÔ½Ø“éP´éÔ½àÀ×ù
+z
+[
+dropoff_locationDropoff location identifier"dropoff_location_idJduration_prediction
+öåÔ½ ÇÐP´éÔ½à¨ßù
+e
+F
+trip_idUnique taxi trip identifier"trip_idJduration_prediction
+öåÔ½˜ÆíP´éÔ½ Ïçù
+p
+Q
+location_idGeographic location identifier"location_idJduration_prediction
+öåÔ½ðµÛP´éÔ½ˆ¿ïù
+I
+*
+__dummy"
+__dummy_idJduration_prediction
+öåÔ½à–õP´éÔ½è‡÷ù1"$a4414590-7b15-4263-ac1c-55de9d88004d*´éÔ½ˆ˜óü2ò
+Ò
+vendor_performance_featuresduration_prediction	vendor_id"
+total_trips"
+
+avg_rating"
+avg_fare_per_trip"
+avg_tip_percentage"
+completion_rate2€õ$:úpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_trips@RVendor performance metricsb
+	vendor_id
+öåÔ½ø²õLèèÔ½°Úˆ®2Þ
+¾
+location_stats_featuresduration_predictionlocation_id"
+avg_daily_trips"
+avg_fare_per_mile"
+peak_demand_hours"
+popular_destinations"
+avg_traffic_level2€õ$:Ë	timestamp‚Ì
+É{"name": "location_stats", "query": "SELECT \n    location_id,\n    latitude,\n    longitude,\n    current_demand,\n    available_taxis,\n    surge_multiplier,\n    weather_condition,\n    traffic_level,\n    event_timestamp\nFROM feature_store.location_features\nWHERE event_timestamp >= NOW() - INTERVAL '24 hours'  -- Adjust time window as needed\n  AND location_id IS NOT NULL\n  AND latitude BETWEEN -90 AND 90\n  AND longitude BETWEEN -180 AND 180\n  AND current_demand >= 0\n  AND available_taxis >= 0\n  AND surge_multiplier >= 1.0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢location_stats@R&Location-based statistics and patternsb
+location_id
+öåÔ½îµLèèÔ½ˆùŠ°2ß
+¿
+historical_trip_featuresduration_predictiontrip_idpickup_locationdropoff_location"
+avg_duration"
+avg_fare"
+avg_tip_percentage"
+total_trips"
+peak_hour_trips"
+common_payment_type2€šž:úpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_trips@R'Historical trip statistics and patternsb
+trip_idb
+pickup_location_idb
+dropoff_location_id
+öåÔ½€™áLèèÔ½À×±2ù
+Ù
+payment_pattern_featuresduration_predictionpayment_type"
+usage_percentage"
+avg_transaction_amount"
+peak_usage_hours"
+preferred_by_distance2€õ$:úpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_trips@RPayment method usage patternsb
+payment_type_id
+öåÔ½ÐLèèÔ½ÀÆí³bpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_tripsªduration_predictionb¼event_timestampjÿ
+localhost:9092tracking.data.validatedÎË
+È
+        {
+            "type": "record",
+            "name": "taxi_trip",
+            "fields": [
+                {"name": "trip_id", "type": "string"},
+                {"name": "vendor_id", "type": "int"},
+                {"name": "pickup_datetime", "type": "string"},
+                {"name": "dropoff_datetime", "type": "string"},
+                {"name": "passenger_count", "type": "int"},
+                {"name": "trip_distance", "type": "double"},
+                {"name": "pickup_longitude", "type": "double"},
+                {"name": "pickup_latitude", "type": "double"},
+                {"name": "dropoff_longitude", "type": "double"},
+                {"name": "dropoff_latitude", "type": "double"},
+                {"name": "payment_type", "type": "int"},
+                {"name": "fare_amount", "type": "double"},
+                {"name": "tip_amount", "type": "double"},
+                {"name": "total_amount", "type": "double"},
+                {"name": "rate_code_id", "type": "int"},
+                {"name": "event_timestamp", "type": "string"}
+            ]
+        }
+        "¬Šfeast.data_source.KafkaSource¢realtime_trips_streamªduration_predictionº)Stream of real-time taxi trips from KafkaÂ
+teamml_teamÂ
+producttrip_predictionÒúpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_tripsbá	timestamp‚Ì
+É{"name": "location_stats", "query": "SELECT \n    location_id,\n    latitude,\n    longitude,\n    current_demand,\n    available_taxis,\n    surge_multiplier,\n    weather_condition,\n    traffic_level,\n    event_timestamp\nFROM feature_store.location_features\nWHERE event_timestamp >= NOW() - INTERVAL '24 hours'  -- Adjust time window as needed\n  AND location_id IS NOT NULL\n  AND latitude BETWEEN -90 AND 90\n  AND longitude BETWEEN -180 AND 180\n  AND current_demand >= 0\n  AND available_taxis >= 0\n  AND surge_multiplier >= 1.0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢location_statsªduration_predictionbòevent_timestampjÚ
+localhost:9092tracking.data.validatedª§
+¤
+        {
+            "type": "record",
+            "name": "location_update",
+            "fields": [
+                {"name": "location_id", "type": "int"},
+                {"name": "latitude", "type": "double"},
+                {"name": "longitude", "type": "double"},
+                {"name": "current_demand", "type": "int"},
+                {"name": "available_taxis", "type": "int"},
+                {"name": "surge_multiplier", "type": "double"},
+                {"name": "weather_condition", "type": "string"},
+                {"name": "traffic_level", "type": "string"},
+                {"name": "event_timestamp", "type": "string"}
+            ]
+        }
+        "<Šfeast.data_source.KafkaSource¢location_updates_streamªduration_predictionº/Stream of real-time location updates from KafkaÂ
+teamml_teamÂ
+productdemand_predictionÒË	timestamp‚Ì
+É{"name": "location_stats", "query": "SELECT \n    location_id,\n    latitude,\n    longitude,\n    current_demand,\n    available_taxis,\n    surge_multiplier,\n    weather_condition,\n    traffic_level,\n    event_timestamp\nFROM feature_store.location_features\nWHERE event_timestamp >= NOW() - INTERVAL '24 hours'  -- Adjust time window as needed\n  AND location_id IS NOT NULL\n  AND latitude BETWEEN -90 AND 90\n  AND longitude BETWEEN -180 AND 180\n  AND current_demand >= 0\n  AND available_taxis >= 0\n  AND surge_multiplier >= 1.0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢location_statsr§(
+‡(
+location_features_streamduration_predictionlocation_id"
+weather_condition"
+latitude"
+location_id"
+traffic_level"
+available_taxis"
+current_demand"
+event_timestamp"
+	longitude"
+surge_multiplier*
+location_id2!Real-time location-based featuresJRË	timestamp‚Ì
+É{"name": "location_stats", "query": "SELECT \n    location_id,\n    latitude,\n    longitude,\n    current_demand,\n    available_taxis,\n    surge_multiplier,\n    weather_condition,\n    traffic_level,\n    event_timestamp\nFROM feature_store.location_features\nWHERE event_timestamp >= NOW() - INTERVAL '24 hours'  -- Adjust time window as needed\n  AND location_id IS NOT NULL\n  AND latitude BETWEEN -90 AND 90\n  AND longitude BETWEEN -180 AND 180\n  AND current_demand >= 0\n  AND available_taxis >= 0\n  AND surge_multiplier >= 1.0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢location_statsZÜevent_timestampjÚ
+localhost:9092tracking.data.validatedª§
+¤
+        {
+            "type": "record",
+            "name": "location_update",
+            "fields": [
+                {"name": "location_id", "type": "int"},
+                {"name": "latitude", "type": "double"},
+                {"name": "longitude", "type": "double"},
+                {"name": "current_demand", "type": "int"},
+                {"name": "available_taxis", "type": "int"},
+                {"name": "surge_multiplier", "type": "double"},
+                {"name": "weather_condition", "type": "string"},
+                {"name": "traffic_level", "type": "string"},
+                {"name": "event_timestamp", "type": "string"}
+            ]
+        }
+        "<Šfeast.data_source.KafkaSource¢location_updates_streamº/Stream of real-time location updates from KafkaÂ
+teamml_teamÂ
+productdemand_predictionÒË	timestamp‚Ì
+É{"name": "location_stats", "query": "SELECT \n    location_id,\n    latitude,\n    longitude,\n    current_demand,\n    available_taxis,\n    surge_multiplier,\n    weather_condition,\n    traffic_level,\n    event_timestamp\nFROM feature_store.location_features\nWHERE event_timestamp >= NOW() - INTERVAL '24 hours'  -- Adjust time window as needed\n  AND location_id IS NOT NULL\n  AND latitude BETWEEN -90 AND 90\n  AND longitude BETWEEN -180 AND 180\n  AND current_demand >= 0\n  AND available_taxis >= 0\n  AND surge_multiplier >= 1.0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢location_stats`jÊ	
+location_features_streamò€•g      Œ
+dill._dill”Œ_create_function”“”(h Œ_create_code”“”(C ”KK K KKKCC| S ”Œ"Process real-time location updates”…”)Œdf”…”ŒJ/home/chanhhuy/nyc-taxi-duration-prediction/feature_store/features_view.py”Œlocation_features_stream”KC”))t”R”}”Œ__name__”Œ__main__”shNNt”R”}”}”(Œ__doc__”hŒ__annotations__”}”h	Œpyspark.sql.dataframe”Œ	DataFrame”“”su†”b.¸@stream_feature_view(
+    entities=[location],
+    ttl=timedelta(hours=1),
+    mode="spark",
+    schema=[
+        Field(name="location_id", dtype=Int64),
+        Field(name="latitude", dtype=Float32),
+        Field(name="longitude", dtype=Float32),
+        Field(name="current_demand", dtype=Int32),
+        Field(name="available_taxis", dtype=Int32),
+        Field(name="surge_multiplier", dtype=Float32),
+        Field(name="weather_condition", dtype=String),
+        Field(name="traffic_level", dtype=String),
+        Field(name="event_timestamp", dtype=String),
+    ],
+    timestamp_field="event_timestamp",
+    online=True,
+    source=location_updates_stream,
+    description="Real-time location-based features",
+)
+def location_features_stream(df: DataFrame):
+    """Process real-time location updates"""
+    return df
+rspark‚event_timestampŠÍ	
+Ê	
+location_features_streamò€•g      Œ
+dill._dill”Œ_create_function”“”(h Œ_create_code”“”(C ”KK K KKKCC| S ”Œ"Process real-time location updates”…”)Œdf”…”ŒJ/home/chanhhuy/nyc-taxi-duration-prediction/feature_store/features_view.py”Œlocation_features_stream”KC”))t”R”}”Œ__name__”Œ__main__”shNNt”R”}”}”(Œ__doc__”hŒ__annotations__”}”h	Œpyspark.sql.dataframe”Œ	DataFrame”“”su†”b.¸@stream_feature_view(
+    entities=[location],
+    ttl=timedelta(hours=1),
+    mode="spark",
+    schema=[
+        Field(name="location_id", dtype=Int64),
+        Field(name="latitude", dtype=Float32),
+        Field(name="longitude", dtype=Float32),
+        Field(name="current_demand", dtype=Int32),
+        Field(name="available_taxis", dtype=Int32),
+        Field(name="surge_multiplier", dtype=Float32),
+        Field(name="weather_condition", dtype=String),
+        Field(name="traffic_level", dtype=String),
+        Field(name="event_timestamp", dtype=String),
+    ],
+    timestamp_field="event_timestamp",
+    online=True,
+    source=location_updates_stream,
+    description="Real-time location-based features",
+)
+def location_features_stream(df: DataFrame):
+    """Process real-time location updates"""
+    return df
+
+öåÔ½°‹ŠM´éÔ½€üæãrâ
+Â
+location_updates_streamduration_predictionlocation_id"
+available_taxis"
+weather_condition"
+current_demand"
+latitude"
+location_id"
+traffic_level"
+	longitude"
+surge_multiplier*
+location_id2!Real-time location-based featuresJ€£RË	timestamp‚Ì
+É{"name": "location_stats", "query": "SELECT \n    location_id,\n    latitude,\n    longitude,\n    current_demand,\n    available_taxis,\n    surge_multiplier,\n    weather_condition,\n    traffic_level,\n    event_timestamp\nFROM feature_store.location_features\nWHERE event_timestamp >= NOW() - INTERVAL '24 hours'  -- Adjust time window as needed\n  AND location_id IS NOT NULL\n  AND latitude BETWEEN -90 AND 90\n  AND longitude BETWEEN -180 AND 180\n  AND current_demand >= 0\n  AND available_taxis >= 0\n  AND surge_multiplier >= 1.0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢location_statsZÜevent_timestampjÚ
+localhost:9092tracking.data.validatedª§
+¤
+        {
+            "type": "record",
+            "name": "location_update",
+            "fields": [
+                {"name": "location_id", "type": "int"},
+                {"name": "latitude", "type": "double"},
+                {"name": "longitude", "type": "double"},
+                {"name": "current_demand", "type": "int"},
+                {"name": "available_taxis", "type": "int"},
+                {"name": "surge_multiplier", "type": "double"},
+                {"name": "weather_condition", "type": "string"},
+                {"name": "traffic_level", "type": "string"},
+                {"name": "event_timestamp", "type": "string"}
+            ]
+        }
+        "<Šfeast.data_source.KafkaSource¢location_updates_streamº/Stream of real-time location updates from KafkaÂ
+teamml_teamÂ
+productdemand_predictionÒË	timestamp‚Ì
+É{"name": "location_stats", "query": "SELECT \n    location_id,\n    latitude,\n    longitude,\n    current_demand,\n    available_taxis,\n    surge_multiplier,\n    weather_condition,\n    traffic_level,\n    event_timestamp\nFROM feature_store.location_features\nWHERE event_timestamp >= NOW() - INTERVAL '24 hours'  -- Adjust time window as needed\n  AND location_id IS NOT NULL\n  AND latitude BETWEEN -90 AND 90\n  AND longitude BETWEEN -180 AND 180\n  AND current_demand >= 0\n  AND available_taxis >= 0\n  AND surge_multiplier >= 1.0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢location_stats`rspark
+öåÔ½ðÃƒP´éÔ½Èî§ér¨
+ˆ
+realtime_trips_streamduration_predictiontrip_id"
+rate_code_id"
+payment_type"
+dropoff_latitude"
+trip_distance"
+total_amount"
+fare_amount"
+	vendor_id"
+pickup_latitude"
+pickup_longitude"
+trip_id"
+dropoff_longitude"
+passenger_count"
+
+tip_amount*
+trip_id2Real-time taxi trip featuresJ€£Rúpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_tripsZ¦event_timestampjÿ
+localhost:9092tracking.data.validatedÎË
+È
+        {
+            "type": "record",
+            "name": "taxi_trip",
+            "fields": [
+                {"name": "trip_id", "type": "string"},
+                {"name": "vendor_id", "type": "int"},
+                {"name": "pickup_datetime", "type": "string"},
+                {"name": "dropoff_datetime", "type": "string"},
+                {"name": "passenger_count", "type": "int"},
+                {"name": "trip_distance", "type": "double"},
+                {"name": "pickup_longitude", "type": "double"},
+                {"name": "pickup_latitude", "type": "double"},
+                {"name": "dropoff_longitude", "type": "double"},
+                {"name": "dropoff_latitude", "type": "double"},
+                {"name": "payment_type", "type": "int"},
+                {"name": "fare_amount", "type": "double"},
+                {"name": "tip_amount", "type": "double"},
+                {"name": "total_amount", "type": "double"},
+                {"name": "rate_code_id", "type": "int"},
+                {"name": "event_timestamp", "type": "string"}
+            ]
+        }
+        "¬Šfeast.data_source.KafkaSource¢realtime_trips_streamº)Stream of real-time taxi trips from KafkaÂ
+teamml_teamÂ
+producttrip_predictionÒúpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_trips`rspark
+öåÔ½ðÔ§P´éÔ½ÐÈ‹írˆ4
+è3
+trip_features_streamduration_predictiontrip_idpickup_locationdropoff_location	vendor_id"
+pickup_datetime"
+dropoff_latitude"
+trip_distance"
+dropoff_datetime"
+pickup_longitude"
+pickup_latitude"
+fare_amount"
+total_amount"
+trip_id"
+rate_code_id"
+dropoff_longitude"
+dropoff_location_id"
+passenger_count"
+pickup_location_id"
+payment_type"
+event_timestamp"
+	vendor_id"
+
+tip_amount*
+trip_id*
+	vendor_id*
+pickup_location_id*
+dropoff_location_id2Real-time trip featuresJ 8Rúpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_tripsZ¦event_timestampjÿ
+localhost:9092tracking.data.validatedÎË
+È
+        {
+            "type": "record",
+            "name": "taxi_trip",
+            "fields": [
+                {"name": "trip_id", "type": "string"},
+                {"name": "vendor_id", "type": "int"},
+                {"name": "pickup_datetime", "type": "string"},
+                {"name": "dropoff_datetime", "type": "string"},
+                {"name": "passenger_count", "type": "int"},
+                {"name": "trip_distance", "type": "double"},
+                {"name": "pickup_longitude", "type": "double"},
+                {"name": "pickup_latitude", "type": "double"},
+                {"name": "dropoff_longitude", "type": "double"},
+                {"name": "dropoff_latitude", "type": "double"},
+                {"name": "payment_type", "type": "int"},
+                {"name": "fare_amount", "type": "double"},
+                {"name": "tip_amount", "type": "double"},
+                {"name": "total_amount", "type": "double"},
+                {"name": "rate_code_id", "type": "int"},
+                {"name": "event_timestamp", "type": "string"}
+            ]
+        }
+        "¬Šfeast.data_source.KafkaSource¢realtime_trips_streamº)Stream of real-time taxi trips from KafkaÂ
+teamml_teamÂ
+producttrip_predictionÒúpickup_datetime‚ó
+ð{"name": "historical_trips", "query": "SELECT \n    trip_id,\n    vendor_id,\n    passenger_count,\n    trip_distance,\n    fare_amount,\n    tip_amount,\n    total_amount,\n    rate_code_id,\n    event_timestamp,\n    pickup_latitude,\n    pickup_longitude,\n    dropoff_latitude,\n    dropoff_longitude,\n    payment_type\nFROM feature_store.trip_features\nWHERE event_timestamp >= NOW() - INTERVAL '90 days'  -- Changed to use event_timestamp\n  AND trip_id IS NOT NULL\n  AND vendor_id IS NOT NULL\n  AND passenger_count > 0\n  AND trip_distance >= 0\n  AND fare_amount >= 0\nORDER BY event_timestamp DESC", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢historical_trips`j¶
+trip_features_streamç€•\      Œ
+dill._dill”Œ_create_function”“”(h Œ_create_code”“”(C ”KK K KKKCC| S ”ŒProcess real-time trip data”…”)Œdf”…”ŒJ/home/chanhhuy/nyc-taxi-duration-prediction/feature_store/features_view.py”Œtrip_features_stream”K1C”))t”R”}”Œ__name__”Œ__main__”shNNt”R”}”}”(Œ__doc__”hŒ__annotations__”}”h	Œpyspark.sql.dataframe”Œ	DataFrame”“”su†”b.³	@stream_feature_view(
+    entities=[trip, pickup_location, dropoff_location, vendor],
+    ttl=timedelta(hours=2),
+    mode="spark",
+    schema=[
+        Field(name="trip_id", dtype=String),
+        Field(name="vendor_id", dtype=Int32),
+        Field(name="pickup_datetime", dtype=String),
+        Field(name="dropoff_datetime", dtype=String),
+        Field(name="passenger_count", dtype=Int32),
+        Field(name="trip_distance", dtype=Float32),
+        Field(name="pickup_longitude", dtype=Float32),
+        Field(name="pickup_latitude", dtype=Float32),
+        Field(name="dropoff_longitude", dtype=Float32),
+        Field(name="dropoff_latitude", dtype=Float32),
+        Field(name="payment_type", dtype=Int32),
+        Field(name="fare_amount", dtype=Float32),
+        Field(name="tip_amount", dtype=Float32),
+        Field(name="total_amount", dtype=Float32),
+        Field(name="rate_code_id", dtype=Int32),
+        Field(name="event_timestamp", dtype=String),
+    ],
+    timestamp_field="event_timestamp",
+    online=True,
+    source=realtime_trips_stream,
+    description="Real-time trip features",
+)
+def trip_features_stream(df: DataFrame):
+    """Process real-time trip data"""
+    return df
+rspark‚event_timestampŠ¹
+¶
+trip_features_streamç€•\      Œ
+dill._dill”Œ_create_function”“”(h Œ_create_code”“”(C ”KK K KKKCC| S ”ŒProcess real-time trip data”…”)Œdf”…”ŒJ/home/chanhhuy/nyc-taxi-duration-prediction/feature_store/features_view.py”Œtrip_features_stream”K1C”))t”R”}”Œ__name__”Œ__main__”shNNt”R”}”}”(Œ__doc__”hŒ__annotations__”}”h	Œpyspark.sql.dataframe”Œ	DataFrame”“”su†”b.³	@stream_feature_view(
+    entities=[trip, pickup_location, dropoff_location, vendor],
+    ttl=timedelta(hours=2),
+    mode="spark",
+    schema=[
+        Field(name="trip_id", dtype=String),
+        Field(name="vendor_id", dtype=Int32),
+        Field(name="pickup_datetime", dtype=String),
+        Field(name="dropoff_datetime", dtype=String),
+        Field(name="passenger_count", dtype=Int32),
+        Field(name="trip_distance", dtype=Float32),
+        Field(name="pickup_longitude", dtype=Float32),
+        Field(name="pickup_latitude", dtype=Float32),
+        Field(name="dropoff_longitude", dtype=Float32),
+        Field(name="dropoff_latitude", dtype=Float32),
+        Field(name="payment_type", dtype=Int32),
+        Field(name="fare_amount", dtype=Float32),
+        Field(name="tip_amount", dtype=Float32),
+        Field(name="total_amount", dtype=Float32),
+        Field(name="rate_code_id", dtype=Int32),
+        Field(name="event_timestamp", dtype=String),
+    ],
+    timestamp_field="event_timestamp",
+    online=True,
+    source=realtime_trips_stream,
+    description="Real-time trip features",
+)
+def trip_features_stream(df: DataFrame):
+    """Process real-time trip data"""
+    return df
+
+öåÔ½˜êçN´éÔ½ Žëñz;
+duration_prediction$3d23c30d-57c1-498d-8fc9-5e7187bd537a

@@ -1,18 +1,15 @@
 FROM python:3.9-slim
 
+# Install curl
+RUN apt-get update && apt-get install -y curl
+
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Remove the requirements.txt file
+RUN rm /tmp/requirements.txt
+
+COPY . /app
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy requirements and install Python packages
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy application code
-COPY . .
-
-CMD ["python", "insert_data.py"]
+CMD ["sh", "-c", "bash start.sh"]

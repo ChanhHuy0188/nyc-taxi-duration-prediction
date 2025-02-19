@@ -38,8 +38,8 @@ logger.add("logs/ingest_stream.log", level="DEBUG")
 
 # Kafka environment variables
 KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092")
-KAFKA_TRIPS_TOPIC = os.getenv("KAFKA_TRIPS_TOPIC", "nyc.taxi.trips.validated")
-KAFKA_LOCATIONS_TOPIC = os.getenv("KAFKA_LOCATIONS_TOPIC", "nyc.taxi.locations")
+KAFKA_TRIPS_TOPIC = os.getenv("KAFKA_TRIPS_TOPIC", "tracking.data.validated")
+KAFKA_LOCATIONS_TOPIC = os.getenv("KAFKA_LOCATIONS_TOPIC", "tracking.data.validated")
 
 # PostgreSQL environment variables
 POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
@@ -99,6 +99,9 @@ spark = (
     .config("spark.streaming.backpressure.enabled", True)
     .config("spark.kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS)
     .config("spark.kafka.failOnDataLoss", "false")
+    .config("spark.sql.adaptive.enabled", "false")
+    .config("spark.sql.streaming.forceDeleteTempCheckpointLocation", "true")
+    .config("spark.sql.streaming.checkpointLocation", "checkpoints")
     .getOrCreate()
 )
 
@@ -298,14 +301,36 @@ class TaxiTripsProcessor(SparkKafkaProcessor):
             self.spark.readStream.format("kafka")
             .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS)
             .option("subscribe", KAFKA_TRIPS_TOPIC)
-            .option("startingOffsets", "latest")
-            .option("failOnDataLoss", "false")
             .load()
         )
 
-        return stream_df.select(F.from_json(
-            F.col("value").cast("string"), TRIP_SCHEMA
-        ).alias("data")).select("data.*")
+        parsed_df = stream_df.select(
+            F.from_json(F.col("value").cast("string"), TRIP_SCHEMA).alias("data")
+        ).select("data.*")
+
+        # Just add watermark without any sorting
+        return parsed_df.withWatermark("event_timestamp", "5 minutes")
+
+    def process_batch(self, df: pd.DataFrame, batch_id) -> pd.DataFrame:
+        """Process each micro-batch"""
+        try:
+            if df.empty:
+                logger.warning(f"Batch {batch_id}: Empty DataFrame received")
+                return df
+
+            # Convert timestamp column if it's string
+            if 'event_timestamp' in df.columns and df['event_timestamp'].dtype == 'object':
+                df['event_timestamp'] = pd.to_datetime(df['event_timestamp'])
+
+            # Apply preprocessing
+            if self.preprocess_fn:
+                df = self.preprocess_fn(df)
+
+            return df
+
+        except Exception as e:
+            logger.error(f"Error processing batch {batch_id}: {str(e)}")
+            return df
 
 
 class LocationUpdatesProcessor(SparkKafkaProcessor):
@@ -316,14 +341,36 @@ class LocationUpdatesProcessor(SparkKafkaProcessor):
             self.spark.readStream.format("kafka")
             .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP_SERVERS)
             .option("subscribe", KAFKA_LOCATIONS_TOPIC)
-            .option("startingOffsets", "latest")
-            .option("failOnDataLoss", "false")
             .load()
         )
 
-        return stream_df.select(F.from_json(
-            F.col("value").cast("string"), LOCATION_SCHEMA
-        ).alias("data")).select("data.*")
+        parsed_df = stream_df.select(
+            F.from_json(F.col("value").cast("string"), LOCATION_SCHEMA).alias("data")
+        ).select("data.*")
+
+        # Just add watermark without any sorting
+        return parsed_df.withWatermark("event_timestamp", "1 minute")
+
+    def process_batch(self, df: pd.DataFrame, batch_id) -> pd.DataFrame:
+        """Process each micro-batch"""
+        try:
+            if df.empty:
+                logger.warning(f"Batch {batch_id}: Empty DataFrame received")
+                return df
+
+            # Convert timestamp column if it's string
+            if 'event_timestamp' in df.columns and df['event_timestamp'].dtype == 'object':
+                df['event_timestamp'] = pd.to_datetime(df['event_timestamp'])
+
+            # Apply preprocessing
+            if self.preprocess_fn:
+                df = self.preprocess_fn(df)
+
+            return df
+
+        except Exception as e:
+            logger.error(f"Error processing batch {batch_id}: {str(e)}")
+            return df
 
 
 def run_materialization():
@@ -344,24 +391,21 @@ if __name__ == "__main__":
         initialize_feature_tables()
 
         # Get feature views
-        trip_features_view = store.get_stream_feature_view("trip_features_stream")
-        location_features_view = store.get_stream_feature_view("location_features_stream")
+        trip_features_view = store.get_stream_feature_view("realtime_trips_stream")
+        location_features_view = store.get_stream_feature_view("location_updates_stream")
 
-        # Start materialization thread
-        materialization_thread = threading.Thread(
-            target=run_materialization, daemon=True
-        )
-        materialization_thread.start()
-        logger.info("Background materialization thread started")
-
-        # Configure processors
+        # Configure processors - removed invalid watermark_delay_ms parameter
         processor_config = SparkProcessorConfig(
             mode="spark",
             source="kafka",
             spark_session=spark,
             processing_time="4 seconds",
-            query_timeout=30,
+            query_timeout=30
         )
+
+        # Set Spark session configurations for watermarking
+        spark.conf.set("spark.sql.streaming.watermarkDelayThreshold", "5 minutes")
+        spark.conf.set("spark.sql.streaming.minBatchesToRetain", "2")
 
         # Initialize processors
         trip_processor = TaxiTripsProcessor(
@@ -371,21 +415,21 @@ if __name__ == "__main__":
             preprocess_fn=preprocess_trip_data,
         )
 
-        location_processor = LocationUpdatesProcessor(
-            config=processor_config,
-            fs=store,
-            sfv=location_features_view,
-            preprocess_fn=preprocess_location_data,
-        )
+        # location_processor = LocationUpdatesProcessor(
+        #     config=processor_config,
+        #     fs=store,
+        #     sfv=location_features_view,
+        #     preprocess_fn=preprocess_location_data,
+        # )
 
         # Start ingestion
         logger.info("Starting feature ingestion...")
         trip_query = trip_processor.ingest_stream_feature_view(PushMode.ONLINE)
-        location_query = location_processor.ingest_stream_feature_view(PushMode.ONLINE)
+        # location_query = location_processor.ingest_stream_feature_view(PushMode.ONLINE)
 
         # Wait for termination
         trip_query.awaitTermination()
-        location_query.awaitTermination()
+        # location_query.awaitTermination()
 
     except Exception as e:
         logger.error(f"Failed to start feature ingestion: {str(e)}")

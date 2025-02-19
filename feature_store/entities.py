@@ -9,12 +9,12 @@ trip = Entity(
     join_keys=["trip_id"],
 )
 
-# Location entity
+# Location entity - Changed to use location_id as single join key
 location = Entity(
-    name="location",
-    value_type=ValueType.STRING,
+    name="location_id",  # Changed from "location"
+    value_type=ValueType.INT64,  # Changed to INT64 to match your schema
     description="Geographic location identifier",
-    join_keys=["latitude", "longitude"],
+    join_keys=["location_id"],  # Single join key instead of [latitude, longitude]
 )
 
 # Vendor entity
