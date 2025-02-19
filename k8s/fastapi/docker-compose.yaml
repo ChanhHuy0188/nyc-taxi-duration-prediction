@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fastapi-app:latest
+    container_name: fastapi-app
+    ports:
+      - "9999:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/hello"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
