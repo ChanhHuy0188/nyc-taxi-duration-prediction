@@ -1,0 +1,22 @@
+[2025-03-16T03:37:31.540+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-16T03:37:31.556+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.bronze_layer_group.check_minio_connection manual__2025-03-16T03:37:27.564271+00:00 [queued]>
+[2025-03-16T03:37:31.565+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.bronze_layer_group.check_minio_connection manual__2025-03-16T03:37:27.564271+00:00 [queued]>
+[2025-03-16T03:37:31.565+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2025-03-16T03:37:31.578+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): bronze_layer_group.check_minio_connection> on 2025-03-16 03:37:27.564271+00:00
+[2025-03-16T03:37:31.587+0000] {standard_task_runner.py:72} INFO - Started process 1873 to run task
+[2025-03-16T03:37:31.592+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'bronze_layer_group.check_minio_connection', 'manual__2025-03-16T03:37:27.564271+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline.py', '--cfg-path', '/tmp/tmp0ned7vtt']
+[2025-03-16T03:37:31.594+0000] {standard_task_runner.py:105} INFO - Job 89: Subtask bronze_layer_group.check_minio_connection
+[2025-03-16T03:37:31.642+0000] {task_command.py:467} INFO - Running <TaskInstance: data_pipeline.bronze_layer_group.check_minio_connection manual__2025-03-16T03:37:27.564271+00:00 [running]> on host 3174348cc1e9
+[2025-03-16T03:37:31.714+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='bronze_layer_group.check_minio_connection' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T03:37:27.564271+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T03:37:27.564271+00:00'
+[2025-03-16T03:37:31.715+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-16T03:37:31.718+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-03-16T03:37:31.721+0000] {base.py:84} INFO - Retrieving connection 'minio_conn'
+[2025-03-16T03:37:31.721+0000] {warnings.py:109} WARNING - <string>:9: UserWarning: AWS Connection (conn_id='minio_conn', conn_type='s3') expected connection type 'aws', got 's3'. This connection might not work correctly. Please use Amazon Web Services Connection type.
+
+[2025-03-16T03:37:31.722+0000] {connection_wrapper.py:325} INFO - AWS Connection (conn_id='minio_conn', conn_type='s3') credentials retrieved from login and password.
+[2025-03-16T03:37:32.277+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-03-16T03:37:32.308+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-16T03:37:32.309+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=bronze_layer_group.check_minio_connection, run_id=manual__2025-03-16T03:37:27.564271+00:00, execution_date=20250316T033727, start_date=20250316T033731, end_date=20250316T033732
+[2025-03-16T03:37:32.369+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-16T03:37:32.401+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-16T03:37:32.403+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

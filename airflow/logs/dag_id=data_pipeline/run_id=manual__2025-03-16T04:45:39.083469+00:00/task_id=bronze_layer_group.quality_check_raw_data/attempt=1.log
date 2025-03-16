@@ -1,0 +1,38 @@
+[2025-03-16T04:45:52.257+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-16T04:45:52.272+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.bronze_layer_group.quality_check_raw_data manual__2025-03-16T04:45:39.083469+00:00 [queued]>
+[2025-03-16T04:45:52.281+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.bronze_layer_group.quality_check_raw_data manual__2025-03-16T04:45:39.083469+00:00 [queued]>
+[2025-03-16T04:45:52.281+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2025-03-16T04:45:52.293+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): bronze_layer_group.quality_check_raw_data> on 2025-03-16 04:45:39.083469+00:00
+[2025-03-16T04:45:52.302+0000] {standard_task_runner.py:72} INFO - Started process 2467 to run task
+[2025-03-16T04:45:52.305+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'bronze_layer_group.quality_check_raw_data', 'manual__2025-03-16T04:45:39.083469+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline.py', '--cfg-path', '/tmp/tmpjkxo2e22']
+[2025-03-16T04:45:52.307+0000] {standard_task_runner.py:105} INFO - Job 193: Subtask bronze_layer_group.quality_check_raw_data
+[2025-03-16T04:45:52.356+0000] {task_command.py:467} INFO - Running <TaskInstance: data_pipeline.bronze_layer_group.quality_check_raw_data manual__2025-03-16T04:45:39.083469+00:00 [running]> on host c891f3a5df31
+[2025-03-16T04:45:52.435+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='bronze_layer_group.quality_check_raw_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T04:45:39.083469+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T04:45:39.083469+00:00'
+[2025-03-16T04:45:52.436+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-16T04:45:52.442+0000] {log.py:232} WARNING - 2025-03-16 04:45:52.441 | INFO     | data_pipeline.bronze.validate_raw_data:validate_raw_data:89 - Initial columns: []
+[2025-03-16T04:45:52.447+0000] {baseoperator.py:416} WARNING - GreatExpectationsOperator.execute cannot be called outside TaskInstance!
+[2025-03-16T04:45:52.447+0000] {great_expectations.py:581} INFO - Running validation with Great Expectations...
+[2025-03-16T04:45:52.447+0000] {great_expectations.py:583} INFO - Instantiating Data Context...
+[2025-03-16T04:45:52.540+0000] {file_data_context.py:222} INFO - FileDataContext loading fluent config
+[2025-03-16T04:45:52.546+0000] {config.py:187} INFO - Loading 'datasources' ->
+[]
+[2025-03-16T04:45:52.647+0000] {great_expectations.py:599} INFO - Creating Checkpoint...
+[2025-03-16T04:45:52.650+0000] {great_expectations.py:618} INFO - Running Checkpoint...
+[2025-03-16T04:45:52.664+0000] {log.py:232} WARNING - 2025-03-16 04:45:52.663 | WARNING  | data_pipeline.bronze.validate_raw_data:validate_raw_data:139 - Great Expectations validation skipped: expectation_suite nyc_taxi_suite not found
+[2025-03-16T04:45:52.667+0000] {monitoring.py:12} INFO - Pipeline Metrics:
+[2025-03-16T04:45:52.667+0000] {monitoring.py:13} INFO - {
+  "total_records": 0,
+  "valid_records": 0,
+  "invalid_records": 0,
+  "validation_errors": {},
+  "contains_dummy": false,
+  "great_expectations_enabled": false
+}
+[2025-03-16T04:45:52.668+0000] {monitoring.py:39} WARNING - Pipeline Alerts:
+Low data volume detected!
+[2025-03-16T04:45:52.668+0000] {python.py:240} INFO - Done. Returned value was: {'data': [], 'metrics': {'total_records': 0, 'valid_records': 0, 'invalid_records': 0, 'validation_errors': {}, 'contains_dummy': False, 'great_expectations_enabled': False}}
+[2025-03-16T04:45:52.692+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-16T04:45:52.692+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=bronze_layer_group.quality_check_raw_data, run_id=manual__2025-03-16T04:45:39.083469+00:00, execution_date=20250316T044539, start_date=20250316T044552, end_date=20250316T044552
+[2025-03-16T04:45:52.737+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-16T04:45:52.757+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-16T04:45:52.759+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

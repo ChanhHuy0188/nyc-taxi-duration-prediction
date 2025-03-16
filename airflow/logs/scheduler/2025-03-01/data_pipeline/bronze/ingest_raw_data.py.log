@@ -1,0 +1,355 @@
+[2025-03-01T14:16:05.482+0000] {processor.py:186} INFO - Started process (PID=54803) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:16:05.485+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:16:05.488+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:16:05.487+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:16:08.580+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:16:08.887+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 3.445 seconds
+[2025-03-01T14:16:38.971+0000] {processor.py:186} INFO - Started process (PID=54828) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:16:38.972+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:16:38.974+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:16:38.973+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:16:39.731+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:16:39.745+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.782 seconds
+[2025-03-01T14:17:10.624+0000] {processor.py:186} INFO - Started process (PID=54854) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:17:10.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:17:10.626+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:17:10.626+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:17:11.017+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:17:11.028+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.411 seconds
+[2025-03-01T14:17:41.371+0000] {processor.py:186} INFO - Started process (PID=54880) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:17:41.372+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:17:41.373+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:17:41.373+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:17:41.789+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:17:41.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.436 seconds
+[2025-03-01T14:18:12.669+0000] {processor.py:186} INFO - Started process (PID=54906) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:18:12.670+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:18:12.671+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:18:12.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:18:13.025+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:18:13.036+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.374 seconds
+[2025-03-01T14:18:43.950+0000] {processor.py:186} INFO - Started process (PID=54932) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:18:43.951+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:18:43.952+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:18:43.952+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:18:44.302+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:18:44.312+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.367 seconds
+[2025-03-01T14:19:14.489+0000] {processor.py:186} INFO - Started process (PID=54958) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:19:14.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:19:14.530+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:19:14.529+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:19:14.880+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:19:14.890+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.407 seconds
+[2025-03-01T14:19:45.108+0000] {processor.py:186} INFO - Started process (PID=54984) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:19:45.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:19:45.110+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:19:45.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:19:45.466+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:19:45.478+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.375 seconds
+[2025-03-01T14:20:15.794+0000] {processor.py:186} INFO - Started process (PID=55016) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:20:15.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:20:15.796+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:20:15.796+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:20:16.158+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:20:16.170+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.382 seconds
+[2025-03-01T14:20:46.614+0000] {processor.py:186} INFO - Started process (PID=55042) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:20:46.653+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:20:46.654+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:20:46.654+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:20:47.030+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:20:47.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.432 seconds
+[2025-03-01T14:21:17.275+0000] {processor.py:186} INFO - Started process (PID=55068) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:21:17.276+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:21:17.277+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:21:17.277+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:21:17.509+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:21:17.520+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.251 seconds
+[2025-03-01T14:21:47.835+0000] {processor.py:186} INFO - Started process (PID=55079) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:21:47.877+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:21:47.878+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:21:47.878+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:21:48.177+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:21:48.190+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.360 seconds
+[2025-03-01T14:22:19.154+0000] {processor.py:186} INFO - Started process (PID=55102) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:22:19.155+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:22:19.156+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:22:19.156+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:22:19.427+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:22:19.440+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.293 seconds
+[2025-03-01T14:22:50.007+0000] {processor.py:186} INFO - Started process (PID=55128) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:22:50.008+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:22:50.009+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:22:50.009+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:22:50.302+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:22:50.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.317 seconds
+[2025-03-01T14:23:20.829+0000] {processor.py:186} INFO - Started process (PID=55154) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:23:20.863+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:23:20.865+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:23:20.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:23:21.186+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:23:21.198+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.375 seconds
+[2025-03-01T14:23:51.537+0000] {processor.py:186} INFO - Started process (PID=55180) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:23:51.538+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:23:51.539+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:23:51.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:23:51.801+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:23:51.813+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.283 seconds
+[2025-03-01T14:24:22.530+0000] {processor.py:186} INFO - Started process (PID=55206) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:24:22.531+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:24:22.532+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:24:22.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:24:22.797+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:24:22.809+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.284 seconds
+[2025-03-01T14:24:53.643+0000] {processor.py:186} INFO - Started process (PID=55232) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:24:53.644+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:24:53.645+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:24:53.645+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:24:53.904+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:24:53.917+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.279 seconds
+[2025-03-01T14:25:23.971+0000] {processor.py:186} INFO - Started process (PID=55258) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:25:23.972+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:25:23.973+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:25:23.973+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:25:24.214+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:25:24.227+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.266 seconds
+[2025-03-01T14:25:54.390+0000] {processor.py:186} INFO - Started process (PID=55284) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:25:54.460+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:25:54.462+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:25:54.461+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:25:54.721+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:25:54.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.350 seconds
+[2025-03-01T14:26:25.256+0000] {processor.py:186} INFO - Started process (PID=55316) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:26:25.257+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:26:25.258+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:26:25.258+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:26:25.599+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:26:25.618+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.370 seconds
+[2025-03-01T14:26:55.828+0000] {processor.py:186} INFO - Started process (PID=55342) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:26:55.858+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:26:55.859+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:26:55.859+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:26:56.130+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:26:56.143+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.323 seconds
+[2025-03-01T14:27:26.341+0000] {processor.py:186} INFO - Started process (PID=55368) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:27:26.342+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:27:26.343+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:27:26.343+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:27:26.629+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:27:26.644+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.310 seconds
+[2025-03-01T14:27:56.917+0000] {processor.py:186} INFO - Started process (PID=55394) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:27:56.918+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:27:56.919+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:27:56.919+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:27:57.202+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:27:57.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.307 seconds
+[2025-03-01T14:28:27.395+0000] {processor.py:186} INFO - Started process (PID=55420) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:28:27.397+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:28:27.398+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:28:27.398+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:28:27.688+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:28:27.703+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.316 seconds
+[2025-03-01T14:28:57.786+0000] {processor.py:186} INFO - Started process (PID=55446) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:28:57.787+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:28:57.789+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:28:57.788+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:28:58.067+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:28:58.083+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.302 seconds
+[2025-03-01T14:29:28.632+0000] {processor.py:186} INFO - Started process (PID=55472) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:29:28.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:29:28.635+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:29:28.634+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:29:28.939+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:29:28.952+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.327 seconds
+[2025-03-01T14:29:59.300+0000] {processor.py:186} INFO - Started process (PID=55481) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:29:59.301+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:29:59.302+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:29:59.302+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:29:59.651+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:29:59.665+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.372 seconds
+[2025-03-01T14:30:30.048+0000] {processor.py:186} INFO - Started process (PID=55506) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:30:30.049+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:30:30.050+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:30:30.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:30:30.326+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:30:30.342+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.301 seconds
+[2025-03-01T14:31:00.612+0000] {processor.py:186} INFO - Started process (PID=55532) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:31:00.613+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:31:00.614+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:31:00.614+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:31:00.894+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:31:00.910+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.304 seconds
+[2025-03-01T14:31:31.457+0000] {processor.py:186} INFO - Started process (PID=55558) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:31:31.458+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:31:31.459+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:31:31.459+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:31:31.738+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:31:31.751+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.300 seconds
+[2025-03-01T14:32:02.418+0000] {processor.py:186} INFO - Started process (PID=55584) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:32:02.456+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:32:02.458+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:32:02.457+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:32:02.692+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:32:02.704+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.291 seconds
+[2025-03-01T14:32:33.352+0000] {processor.py:186} INFO - Started process (PID=55616) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:32:33.353+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:32:33.354+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:32:33.354+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:32:33.623+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:32:33.637+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.292 seconds
+[2025-03-01T14:33:04.268+0000] {processor.py:186} INFO - Started process (PID=55642) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:33:04.270+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T14:33:04.272+0000] {logging_mixin.py:190} INFO - [2025-03-01T14:33:04.272+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:33:04.637+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T14:33:04.652+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.394 seconds
+[2025-03-01T15:21:29.532+0000] {processor.py:186} INFO - Started process (PID=55645) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:21:29.533+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:21:29.535+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:21:29.534+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:21:29.975+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:21:29.990+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.465 seconds
+[2025-03-01T15:22:01.005+0000] {processor.py:186} INFO - Started process (PID=55670) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:22:01.006+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:22:01.007+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:22:01.007+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:22:01.269+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:22:01.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.283 seconds
+[2025-03-01T15:22:31.371+0000] {processor.py:186} INFO - Started process (PID=55696) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:22:31.387+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:22:31.388+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:22:31.387+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:22:31.650+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:22:31.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.297 seconds
+[2025-03-01T15:23:02.193+0000] {processor.py:186} INFO - Started process (PID=55722) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:23:02.194+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:23:02.195+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:23:02.195+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:23:02.478+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:23:02.490+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.303 seconds
+[2025-03-01T15:23:32.788+0000] {processor.py:186} INFO - Started process (PID=55748) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:23:32.789+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:23:32.790+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:23:32.790+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:23:33.072+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:23:33.083+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.301 seconds
+[2025-03-01T15:24:03.960+0000] {processor.py:186} INFO - Started process (PID=55774) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:24:03.961+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:24:03.962+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:24:03.962+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:24:04.215+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:24:04.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.273 seconds
+[2025-03-01T15:24:34.738+0000] {processor.py:186} INFO - Started process (PID=55800) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:24:34.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:24:34.744+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:24:34.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:24:35.003+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:24:35.015+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.286 seconds
+[2025-03-01T15:25:05.384+0000] {processor.py:186} INFO - Started process (PID=55826) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:25:05.386+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:25:05.387+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:25:05.386+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:25:05.621+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:25:05.632+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.254 seconds
+[2025-03-01T15:25:36.084+0000] {processor.py:186} INFO - Started process (PID=55852) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:25:36.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:25:36.134+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:25:36.132+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:25:36.391+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:25:36.402+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.324 seconds
+[2025-03-01T15:26:06.740+0000] {processor.py:186} INFO - Started process (PID=55878) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:26:06.778+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:26:06.780+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:26:06.779+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:26:07.052+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:26:07.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.330 seconds
+[2025-03-01T15:26:37.387+0000] {processor.py:186} INFO - Started process (PID=55904) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:26:37.434+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:26:37.436+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:26:37.435+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:26:37.694+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:26:37.707+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.326 seconds
+[2025-03-01T15:27:08.106+0000] {processor.py:186} INFO - Started process (PID=55930) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:27:08.107+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:27:08.109+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:27:08.108+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:27:08.363+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:27:08.375+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.276 seconds
+[2025-03-01T15:27:38.811+0000] {processor.py:186} INFO - Started process (PID=55962) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:27:38.850+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:27:38.851+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:27:38.850+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:27:39.086+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:27:39.099+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.293 seconds
+[2025-03-01T15:28:09.505+0000] {processor.py:186} INFO - Started process (PID=55988) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:28:09.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:28:09.544+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:28:09.544+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:28:09.772+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:28:09.785+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.285 seconds
+[2025-03-01T15:28:39.908+0000] {processor.py:186} INFO - Started process (PID=56014) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:28:39.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:28:39.912+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:28:39.911+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:28:40.157+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:28:40.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.270 seconds
+[2025-03-01T15:29:10.288+0000] {processor.py:186} INFO - Started process (PID=56023) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:29:10.339+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:29:10.343+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:29:10.343+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:29:10.645+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:29:10.659+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.377 seconds
+[2025-03-01T15:29:40.927+0000] {processor.py:186} INFO - Started process (PID=56048) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:29:40.929+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:29:40.930+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:29:40.930+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:29:41.176+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:29:41.259+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.339 seconds
+[2025-03-01T15:30:11.627+0000] {processor.py:186} INFO - Started process (PID=56074) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:30:11.629+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:30:11.630+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:30:11.629+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:30:11.872+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:30:11.884+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.263 seconds
+[2025-03-01T15:30:42.140+0000] {processor.py:186} INFO - Started process (PID=56100) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:30:42.142+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:30:42.143+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:30:42.143+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:30:42.386+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:30:42.398+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.263 seconds
+[2025-03-01T15:31:12.706+0000] {processor.py:186} INFO - Started process (PID=56126) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:31:12.749+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:31:12.750+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:31:12.750+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:31:12.996+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:31:13.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.307 seconds
+[2025-03-01T15:31:43.327+0000] {processor.py:186} INFO - Started process (PID=56152) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:31:43.367+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:31:43.369+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:31:43.368+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:31:43.613+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:31:43.626+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.304 seconds
+[2025-03-01T15:32:13.825+0000] {processor.py:186} INFO - Started process (PID=56178) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:32:13.864+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:32:13.865+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:32:13.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:32:14.114+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:32:14.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.308 seconds
+[2025-03-01T15:32:44.389+0000] {processor.py:186} INFO - Started process (PID=56204) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:32:44.443+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:32:44.447+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:32:44.447+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:32:44.711+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:32:44.723+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.340 seconds
+[2025-03-01T15:33:14.987+0000] {processor.py:186} INFO - Started process (PID=56230) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:33:14.988+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:33:14.989+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:33:14.988+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:33:15.228+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:33:15.240+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.259 seconds
+[2025-03-01T15:33:45.422+0000] {processor.py:186} INFO - Started process (PID=56256) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:33:45.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:33:45.466+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:33:45.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:33:45.706+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:33:45.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.302 seconds
+[2025-03-01T15:34:15.926+0000] {processor.py:186} INFO - Started process (PID=56282) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:34:15.928+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:34:15.929+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:34:15.929+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:34:16.171+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:34:16.183+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.266 seconds
+[2025-03-01T15:34:46.393+0000] {processor.py:186} INFO - Started process (PID=56308) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:34:46.394+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:34:46.395+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:34:46.395+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:34:46.650+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:34:46.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.276 seconds
+[2025-03-01T15:35:17.307+0000] {processor.py:186} INFO - Started process (PID=56334) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:35:17.309+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:35:17.310+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:35:17.310+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:35:17.556+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:35:17.568+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.266 seconds
+[2025-03-01T15:35:47.760+0000] {processor.py:186} INFO - Started process (PID=56360) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:35:47.799+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:35:47.800+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:35:47.800+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:35:48.047+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:35:48.061+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.307 seconds
+[2025-03-01T15:36:18.149+0000] {processor.py:186} INFO - Started process (PID=56386) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:36:18.150+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:36:18.151+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:36:18.151+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:36:18.405+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:36:18.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.286 seconds
+[2025-03-01T15:36:48.572+0000] {processor.py:186} INFO - Started process (PID=56397) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:36:48.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:36:48.574+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:36:48.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:36:47.694+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:36:47.709+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.372 seconds
+[2025-03-01T15:37:18.182+0000] {processor.py:186} INFO - Started process (PID=56427) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:37:18.183+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:37:18.184+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:37:18.184+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:37:18.426+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:37:18.439+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.263 seconds
+[2025-03-01T15:37:48.596+0000] {processor.py:186} INFO - Started process (PID=56453) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:37:48.618+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:37:48.619+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:37:48.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:37:48.857+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:37:48.870+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.279 seconds
+[2025-03-01T15:38:19.102+0000] {processor.py:186} INFO - Started process (PID=56479) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:38:19.103+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:38:19.105+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:38:19.104+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:38:19.350+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:38:19.362+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.266 seconds
+[2025-03-01T15:38:49.531+0000] {processor.py:186} INFO - Started process (PID=56505) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:38:49.571+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:38:49.577+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:38:49.576+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:38:49.829+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:38:49.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.372 seconds
+[2025-03-01T15:39:20.100+0000] {processor.py:186} INFO - Started process (PID=56531) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:39:20.135+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T15:39:20.136+0000] {logging_mixin.py:190} INFO - [2025-03-01T15:39:20.135+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:39:20.377+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T15:39:20.390+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.295 seconds
+[2025-03-01T18:39:32.111+0000] {processor.py:186} INFO - Started process (PID=56534) to work on /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T18:39:32.112+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py for tasks to queue
+[2025-03-01T18:39:32.114+0000] {logging_mixin.py:190} INFO - [2025-03-01T18:39:32.114+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T18:39:32.734+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py
+[2025-03-01T18:39:32.754+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline/bronze/ingest_raw_data.py took 0.659 seconds

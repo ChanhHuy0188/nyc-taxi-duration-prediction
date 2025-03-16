@@ -1,0 +1,63 @@
+[2025-03-16T04:44:25.918+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-16T04:44:25.931+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.gold_layer_group.load_dimensions_and_facts manual__2025-03-16T04:44:07.350585+00:00 [queued]>
+[2025-03-16T04:44:25.937+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.gold_layer_group.load_dimensions_and_facts manual__2025-03-16T04:44:07.350585+00:00 [queued]>
+[2025-03-16T04:44:25.937+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2025-03-16T04:44:25.950+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): gold_layer_group.load_dimensions_and_facts> on 2025-03-16 04:44:07.350585+00:00
+[2025-03-16T04:44:25.957+0000] {standard_task_runner.py:72} INFO - Started process 2389 to run task
+[2025-03-16T04:44:25.962+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'gold_layer_group.load_dimensions_and_facts', 'manual__2025-03-16T04:44:07.350585+00:00', '--job-id', '190', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline.py', '--cfg-path', '/tmp/tmp6kk4rdkn']
+[2025-03-16T04:44:25.963+0000] {standard_task_runner.py:105} INFO - Job 190: Subtask gold_layer_group.load_dimensions_and_facts
+[2025-03-16T04:44:26.008+0000] {task_command.py:467} INFO - Running <TaskInstance: data_pipeline.gold_layer_group.load_dimensions_and_facts manual__2025-03-16T04:44:07.350585+00:00 [running]> on host c891f3a5df31
+[2025-03-16T04:44:26.095+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='gold_layer_group.load_dimensions_and_facts' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T04:44:07.350585+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T04:44:07.350585+00:00'
+[2025-03-16T04:44:26.096+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-16T04:44:26.099+0000] {log.py:232} WARNING - 2025-03-16 04:44:26.098 | INFO     | data_pipeline.gold.load_to_dwh:load_dimensions_and_facts:275 - Loading features into Data Warehouse
+[2025-03-16T04:44:26.103+0000] {log.py:232} WARNING - 2025-03-16 04:44:26.103 | INFO     | data_pipeline.gold.load_to_dwh:load_dimensions_and_facts:281 - Available columns: ['VendorID', 'lpep_pickup_datetime', 'lpep_dropoff_datetime', 'store_and_fwd_flag', 'RatecodeID', 'PULocationID', 'DOLocationID', 'passenger_count', 'trip_distance', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'ehail_fee', 'improvement_surcharge', 'total_amount', 'payment_type', 'trip_type', 'congestion_surcharge', 'record_hash', 'processed_date', 'processing_pipeline', 'valid']
+[2025-03-16T04:44:26.104+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-03-16T04:44:26.105+0000] {base.py:84} INFO - Retrieving connection 'postgres_***'
+[2025-03-16T04:44:26.109+0000] {sql.py:624} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS feature_store;, parameters: None
+[2025-03-16T04:44:26.112+0000] {sql.py:624} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS feature_store.trip_features (
+            trip_id TEXT,
+            vendor_id TEXT,
+            pickup_location_id TEXT,
+            dropoff_location_id TEXT,
+            payment_type TEXT,
+            rate_code_id TEXT,
+            event_timestamp TIMESTAMP,
+            trip_distance FLOAT,
+            fare_amount FLOAT,
+            tip_amount FLOAT,
+            total_amount FLOAT,
+            passenger_count INTEGER,
+            trip_duration_minutes FLOAT,
+            avg_speed_mph FLOAT,
+            is_shared_ride BOOLEAN,
+            is_suspicious BOOLEAN,
+            created_timestamp TIMESTAMP
+        );
+
+        CREATE TABLE IF NOT EXISTS feature_store.location_features (
+            location_id TEXT,
+            latitude FLOAT,
+            longitude FLOAT,
+            event_timestamp TIMESTAMP,
+            current_demand INTEGER,
+            available_taxis INTEGER,
+            surge_multiplier FLOAT,
+            weather_condition TEXT,
+            traffic_level TEXT,
+            created_timestamp TIMESTAMP
+        );
+        , parameters: None
+[2025-03-16T04:44:26.113+0000] {log.py:232} WARNING - 2025-03-16 04:44:26.113 | INFO     | data_pipeline.gold.load_to_***:create_trip_features:171 - Creating trip features table
+[2025-03-16T04:44:26.126+0000] {log.py:232} WARNING - 2025-03-16 04:44:26.125 | ERROR    | data_pipeline.gold.load_to_***:load_dimensions_and_facts:329 - Failed to load trip features: 'trip_duration_minutes'
+[2025-03-16T04:44:26.126+0000] {log.py:232} WARNING - 2025-03-16 04:44:26.126 | INFO     | data_pipeline.gold.load_to_***:create_location_features:221 - Creating location features table
+[2025-03-16T04:44:26.152+0000] {log.py:232} WARNING - 2025-03-16 04:44:26.152 | INFO     | data_pipeline.gold.load_to_***:create_location_features:268 - Created location features with 80 records
+[2025-03-16T04:44:26.167+0000] {log.py:232} WARNING - 2025-03-16 04:44:26.167 | ERROR    | data_pipeline.gold.load_to_***:load_dimensions_and_facts:337 - Failed to load location features: Failed to insert data: column "trip_distance" of relation "location_features" does not exist
+LINE 2: ...s (location_id,latitude,longitude,event_timestamp,trip_dista...
+                                                             ^
+[2025-03-16T04:44:26.167+0000] {python.py:240} INFO - Done. Returned value was: {'success': True, 'trip_features_loaded': 0, 'location_features_loaded': 80}
+[2025-03-16T04:44:26.190+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-16T04:44:26.191+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=gold_layer_group.load_dimensions_and_facts, run_id=manual__2025-03-16T04:44:07.350585+00:00, execution_date=20250316T044407, start_date=20250316T044425, end_date=20250316T044426
+[2025-03-16T04:44:26.215+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-16T04:44:26.226+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-16T04:44:26.228+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,19 @@
+[2025-03-16T04:42:18.702+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-16T04:42:18.715+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.silver_layer_group.transform_data manual__2025-03-16T04:42:02.625510+00:00 [queued]>
+[2025-03-16T04:42:18.723+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.silver_layer_group.transform_data manual__2025-03-16T04:42:02.625510+00:00 [queued]>
+[2025-03-16T04:42:18.723+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2025-03-16T04:42:18.734+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): silver_layer_group.transform_data> on 2025-03-16 04:42:02.625510+00:00
+[2025-03-16T04:42:18.742+0000] {standard_task_runner.py:72} INFO - Started process 2226 to run task
+[2025-03-16T04:42:18.745+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'silver_layer_group.transform_data', 'manual__2025-03-16T04:42:02.625510+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline.py', '--cfg-path', '/tmp/tmpwylrujd7']
+[2025-03-16T04:42:18.747+0000] {standard_task_runner.py:105} INFO - Job 184: Subtask silver_layer_group.transform_data
+[2025-03-16T04:42:18.790+0000] {task_command.py:467} INFO - Running <TaskInstance: data_pipeline.silver_layer_group.transform_data manual__2025-03-16T04:42:02.625510+00:00 [running]> on host c891f3a5df31
+[2025-03-16T04:42:18.863+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='silver_layer_group.transform_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T04:42:02.625510+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T04:42:02.625510+00:00'
+[2025-03-16T04:42:18.864+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-16T04:42:18.866+0000] {log.py:232} WARNING - 2025-03-16 04:42:18.866 | INFO     | data_pipeline.silver.transform_data:transform_data:15 - Starting data transformation
+[2025-03-16T04:42:18.868+0000] {log.py:232} WARNING - 2025-03-16 04:42:18.867 | WARNING  | data_pipeline.silver.transform_data:transform_data:21 - No data to transform
+[2025-03-16T04:42:18.868+0000] {python.py:240} INFO - Done. Returned value was: {'data': [], 'success': False, 'message': 'No data to transform', 'skip_downstream': True}
+[2025-03-16T04:42:18.895+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-16T04:42:18.896+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=silver_layer_group.transform_data, run_id=manual__2025-03-16T04:42:02.625510+00:00, execution_date=20250316T044202, start_date=20250316T044218, end_date=20250316T044218
+[2025-03-16T04:42:18.930+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-16T04:42:18.948+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-16T04:42:18.950+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

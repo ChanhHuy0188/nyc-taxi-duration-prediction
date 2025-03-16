@@ -1,0 +1,26 @@
+[2025-03-16T04:40:43.305+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-16T04:40:43.318+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.gold_layer_group.load_dimensions_and_facts manual__2025-03-16T04:40:25.252125+00:00 [queued]>
+[2025-03-16T04:40:43.325+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.gold_layer_group.load_dimensions_and_facts manual__2025-03-16T04:40:25.252125+00:00 [queued]>
+[2025-03-16T04:40:43.326+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2025-03-16T04:40:43.336+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): gold_layer_group.load_dimensions_and_facts> on 2025-03-16 04:40:25.252125+00:00
+[2025-03-16T04:40:43.343+0000] {standard_task_runner.py:72} INFO - Started process 2092 to run task
+[2025-03-16T04:40:43.348+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'gold_layer_group.load_dimensions_and_facts', 'manual__2025-03-16T04:40:25.252125+00:00', '--job-id', '178', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline.py', '--cfg-path', '/tmp/tmptoz86994']
+[2025-03-16T04:40:43.349+0000] {standard_task_runner.py:105} INFO - Job 178: Subtask gold_layer_group.load_dimensions_and_facts
+[2025-03-16T04:40:43.394+0000] {task_command.py:467} INFO - Running <TaskInstance: data_pipeline.gold_layer_group.load_dimensions_and_facts manual__2025-03-16T04:40:25.252125+00:00 [running]> on host c891f3a5df31
+[2025-03-16T04:40:43.480+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='gold_layer_group.load_dimensions_and_facts' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T04:40:25.252125+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T04:40:25.252125+00:00'
+[2025-03-16T04:40:43.482+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-16T04:40:43.485+0000] {log.py:232} WARNING - 2025-03-16 04:40:43.485 | INFO     | data_pipeline.gold.load_to_dwh:load_dimensions_and_facts:215 - Loading features into Data Warehouse
+[2025-03-16T04:40:43.491+0000] {log.py:232} WARNING - 2025-03-16 04:40:43.491 | INFO     | data_pipeline.gold.load_to_dwh:load_dimensions_and_facts:221 - Available columns: ['VendorID', 'lpep_pickup_datetime', 'lpep_dropoff_datetime', 'store_and_fwd_flag', 'RatecodeID', 'PULocationID', 'DOLocationID', 'passenger_count', 'trip_distance', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'ehail_fee', 'improvement_surcharge', 'total_amount', 'payment_type', 'trip_type', 'congestion_surcharge', 'record_hash', 'processed_date', 'processing_pipeline', 'valid']
+[2025-03-16T04:40:43.492+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-03-16T04:40:43.493+0000] {base.py:84} INFO - Retrieving connection 'postgres_***'
+[2025-03-16T04:40:43.496+0000] {sql.py:624} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS feature_store;, parameters: None
+[2025-03-16T04:40:43.498+0000] {log.py:232} WARNING - 2025-03-16 04:40:43.498 | INFO     | data_pipeline.gold.load_to_***:create_trip_features:171 - Creating trip features table: %s
+[2025-03-16T04:40:43.500+0000] {log.py:232} WARNING - 2025-03-16 04:40:43.500 | ERROR    | data_pipeline.gold.load_to_***:load_dimensions_and_facts:232 - Failed to load trip features: "['trip_id', 'vendor_id', 'pickup_location_id', 'dropoff_location_id', 'rate_code_id', 'event_timestamp', 'trip_duration_minutes', 'avg_speed_mph', 'is_shared_ride', 'is_suspicious', 'created_timestamp'] not in index"
+[2025-03-16T04:40:43.500+0000] {log.py:232} WARNING - 2025-03-16 04:40:43.500 | INFO     | data_pipeline.gold.load_to_***:create_location_features:196 - Creating location features table: %s
+[2025-03-16T04:40:43.501+0000] {log.py:232} WARNING - 2025-03-16 04:40:43.501 | ERROR    | data_pipeline.gold.load_to_***:load_dimensions_and_facts:240 - Failed to load location features: "None of [Index(['location_id', 'latitude', 'longitude', 'event_timestamp',\n       'current_demand', 'available_taxis', 'surge_multiplier',\n       'weather_condition', 'traffic_level', 'created_timestamp'],\n      dtype='object')] are in the [columns]"
+[2025-03-16T04:40:43.502+0000] {python.py:240} INFO - Done. Returned value was: {'success': True, 'trip_features_loaded': 0, 'location_features_loaded': 0}
+[2025-03-16T04:40:43.526+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-16T04:40:43.527+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=gold_layer_group.load_dimensions_and_facts, run_id=manual__2025-03-16T04:40:25.252125+00:00, execution_date=20250316T044025, start_date=20250316T044043, end_date=20250316T044043
+[2025-03-16T04:40:43.565+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-16T04:40:43.578+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-16T04:40:43.580+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,306 @@
+[2025-02-22T02:28:20.419+0000] {processor.py:186} INFO - Started process (PID=4263) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:28:20.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:28:20.431+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:28:20.430+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:28:24.976+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:28:24.975+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:28:28.044+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:28:28.073+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:28:28.072+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:28:28.130+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:28:28.129+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:28:28.163+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 7.755 seconds
+[2025-02-22T02:28:58.281+0000] {processor.py:186} INFO - Started process (PID=4290) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:28:58.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:28:58.365+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:28:58.364+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:28:59.872+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:28:59.872+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:29:00.775+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:29:00.787+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:29:00.786+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:29:00.940+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:29:00.940+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:29:00.993+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.718 seconds
+[2025-02-22T02:29:31.136+0000] {processor.py:186} INFO - Started process (PID=4316) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:29:31.137+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:29:31.144+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:29:31.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:29:32.630+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:29:32.630+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:29:33.532+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:29:33.544+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:29:33.544+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:29:33.563+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:29:33.563+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:29:33.654+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.525 seconds
+[2025-02-22T02:30:04.065+0000] {processor.py:186} INFO - Started process (PID=4342) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:30:04.102+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:30:04.104+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:04.104+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:30:05.500+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:05.500+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:30:06.374+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:30:06.386+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:06.385+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:30:06.527+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:06.527+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:30:06.541+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.482 seconds
+[2025-02-22T02:30:36.580+0000] {processor.py:186} INFO - Started process (PID=4368) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:30:36.581+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:30:36.583+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:36.583+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:30:38.031+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:38.031+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:30:38.929+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:30:38.941+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:38.941+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:30:38.961+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:30:38.961+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:30:38.976+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.402 seconds
+[2025-02-22T02:31:09.147+0000] {processor.py:186} INFO - Started process (PID=4394) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:31:09.168+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:31:09.179+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:09.178+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:31:10.567+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:10.566+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:31:11.515+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:31:11.526+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:11.526+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:31:11.544+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:11.544+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:31:11.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.417 seconds
+[2025-02-22T02:31:41.787+0000] {processor.py:186} INFO - Started process (PID=4427) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:31:41.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:31:41.790+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:41.790+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:31:43.165+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:43.164+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:31:43.993+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:31:44.004+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:44.004+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:31:44.023+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:31:44.022+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:31:44.038+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.258 seconds
+[2025-02-22T02:32:14.308+0000] {processor.py:186} INFO - Started process (PID=4453) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:32:14.309+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:32:14.311+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:14.311+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:32:15.649+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:15.648+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:32:16.452+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:32:16.463+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:16.463+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:32:16.480+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:16.479+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:32:16.497+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.195 seconds
+[2025-02-22T02:32:46.679+0000] {processor.py:186} INFO - Started process (PID=4479) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:32:46.680+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:32:46.681+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:46.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:32:48.063+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:48.063+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:32:48.876+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:32:48.888+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:48.887+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:32:49.024+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:32:49.024+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:32:49.038+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.365 seconds
+[2025-02-22T02:33:19.357+0000] {processor.py:186} INFO - Started process (PID=4505) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:33:19.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:33:19.361+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:19.360+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:33:20.773+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:20.773+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:33:21.607+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:33:21.618+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:21.618+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:33:21.638+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:21.638+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:33:21.653+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.302 seconds
+[2025-02-22T02:33:51.929+0000] {processor.py:186} INFO - Started process (PID=4531) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:33:51.930+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:33:51.932+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:51.931+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:33:53.266+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:53.266+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:33:54.081+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:33:54.092+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:54.091+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:33:54.220+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:33:54.220+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:33:54.234+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.311 seconds
+[2025-02-22T02:34:24.483+0000] {processor.py:186} INFO - Started process (PID=4557) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:34:24.489+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:34:24.491+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:24.491+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:34:25.880+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:25.879+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:34:26.688+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:34:26.698+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:26.698+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:34:26.716+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:26.716+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:34:26.805+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.330 seconds
+[2025-02-22T02:34:56.841+0000] {processor.py:186} INFO - Started process (PID=4584) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:34:56.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:34:56.844+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:56.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:34:58.205+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:58.205+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:34:59.047+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:34:59.059+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:59.059+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:34:59.202+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:34:59.201+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:34:59.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.380 seconds
+[2025-02-22T02:35:29.518+0000] {processor.py:186} INFO - Started process (PID=4610) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:35:29.520+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:35:29.521+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:35:29.521+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:35:30.879+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:35:30.879+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:35:31.808+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:35:31.819+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:35:31.819+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:35:31.837+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:35:31.836+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:35:31.851+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.338 seconds
+[2025-02-22T02:36:02.120+0000] {processor.py:186} INFO - Started process (PID=4637) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:36:02.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:36:02.192+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:02.191+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:36:03.536+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:03.535+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:36:04.346+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:36:04.357+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:04.357+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:36:04.493+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:04.493+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:36:04.507+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.392 seconds
+[2025-02-22T02:36:34.798+0000] {processor.py:186} INFO - Started process (PID=4663) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:36:34.799+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:36:34.801+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:34.801+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:36:36.142+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:36.141+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:36:37.093+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:36:37.104+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:37.103+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:36:37.121+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:36:37.120+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:36:37.134+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.342 seconds
+[2025-02-22T02:37:07.253+0000] {processor.py:186} INFO - Started process (PID=4689) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:37:07.291+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:37:07.293+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:07.293+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:37:08.646+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:08.646+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:37:09.582+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:37:09.593+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:09.593+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:37:09.611+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:09.611+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:37:09.670+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.423 seconds
+[2025-02-22T02:37:39.900+0000] {processor.py:186} INFO - Started process (PID=4715) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:37:39.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:37:39.950+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:39.948+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:37:41.321+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:41.320+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:37:42.340+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:37:42.352+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:42.352+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:37:42.371+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:37:42.370+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:37:42.385+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.490 seconds
+[2025-02-22T02:38:12.476+0000] {processor.py:186} INFO - Started process (PID=4747) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:38:12.514+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:38:12.516+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:12.516+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:38:13.866+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:13.866+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:38:14.787+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:38:14.798+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:14.798+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:38:14.816+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:14.816+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:38:14.844+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.373 seconds
+[2025-02-22T02:38:44.928+0000] {processor.py:186} INFO - Started process (PID=4773) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:38:44.930+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:38:44.932+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:44.932+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:38:46.515+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:46.515+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:38:47.526+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:38:47.538+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:47.538+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:38:47.558+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:38:47.558+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:38:47.573+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.651 seconds
+[2025-02-22T02:39:17.656+0000] {processor.py:186} INFO - Started process (PID=4799) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:39:17.657+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:39:17.659+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:17.659+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:39:19.333+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:19.332+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:39:20.485+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:39:20.500+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:20.500+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:39:20.527+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:20.526+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:39:20.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.896 seconds
+[2025-02-22T02:39:50.612+0000] {processor.py:186} INFO - Started process (PID=4825) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:39:50.613+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:39:50.615+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:50.615+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:39:52.119+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:52.118+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:39:53.177+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:39:53.191+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:53.190+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:39:53.215+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:39:53.215+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:39:53.231+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.624 seconds
+[2025-02-22T02:40:23.454+0000] {processor.py:186} INFO - Started process (PID=4851) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:40:23.455+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:40:23.458+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:23.458+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:40:24.923+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:24.923+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:40:25.918+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:40:25.930+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:25.930+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:40:25.949+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:25.949+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:40:25.964+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.517 seconds
+[2025-02-22T02:40:56.662+0000] {processor.py:186} INFO - Started process (PID=4877) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:40:56.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:40:56.665+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:56.665+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:40:58.090+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:58.089+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:40:59.108+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:40:59.120+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:59.119+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:40:59.141+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:40:59.141+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:40:59.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.501 seconds
+[2025-02-22T02:41:29.352+0000] {processor.py:186} INFO - Started process (PID=4903) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:41:29.353+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:41:29.356+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:41:29.355+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:41:30.840+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:41:30.840+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:41:31.846+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:41:31.860+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:41:31.860+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:41:31.879+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:41:31.879+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:41:31.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.549 seconds
+[2025-02-22T02:42:02.570+0000] {processor.py:186} INFO - Started process (PID=4929) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:42:02.571+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:42:02.572+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:02.572+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:42:04.041+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:04.041+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:42:05.024+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:42:05.036+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:05.036+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:42:05.056+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:05.056+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:42:05.075+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.511 seconds
+[2025-02-22T02:42:35.269+0000] {processor.py:186} INFO - Started process (PID=4956) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:42:35.272+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:42:35.274+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:35.274+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:42:36.729+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:36.728+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:42:37.683+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:42:37.694+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:37.694+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:42:37.711+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:42:37.711+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:42:37.727+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.464 seconds
+[2025-02-22T02:43:08.146+0000] {processor.py:186} INFO - Started process (PID=4982) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:43:08.148+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:43:08.150+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:08.150+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:43:09.496+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:09.496+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:43:10.430+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:43:10.440+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:10.440+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:43:10.459+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:10.459+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:43:10.474+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.333 seconds
+[2025-02-22T02:43:40.854+0000] {processor.py:186} INFO - Started process (PID=5009) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:43:40.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:43:40.857+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:40.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:43:42.227+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:42.226+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:43:43.169+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:43:43.180+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:43.180+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:43:43.198+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:43:43.198+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:43:43.292+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.445 seconds
+[2025-02-22T02:44:13.521+0000] {processor.py:186} INFO - Started process (PID=5041) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:44:13.559+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:44:13.561+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:13.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:44:14.932+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:14.931+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:44:15.909+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:44:15.919+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:15.919+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:44:15.937+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:15.937+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:44:15.950+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.434 seconds
+[2025-02-22T02:44:46.045+0000] {processor.py:186} INFO - Started process (PID=5067) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:44:46.046+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:44:46.048+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:46.048+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:44:47.421+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:47.421+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:44:48.456+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:44:48.468+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:48.468+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:44:48.487+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:44:48.486+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:44:48.501+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.461 seconds
+[2025-02-22T02:45:18.604+0000] {processor.py:186} INFO - Started process (PID=5093) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:45:18.604+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:45:18.606+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:18.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:45:19.970+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:19.970+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:45:20.902+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:45:20.912+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:20.912+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:45:20.929+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:20.929+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:45:20.943+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.344 seconds
+[2025-02-22T02:45:51.178+0000] {processor.py:186} INFO - Started process (PID=5119) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:45:51.256+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T02:45:51.267+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:51.265+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:45:52.631+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:52.631+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T02:45:53.560+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T02:45:53.570+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:53.570+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T02:45:53.589+0000] {logging_mixin.py:190} INFO - [2025-02-22T02:45:53.589+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 01:00:00+00:00, run_after=2025-02-22 02:00:00+00:00
+[2025-02-22T02:45:53.603+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 2.430 seconds
+[2025-02-22T05:46:11.001+0000] {processor.py:186} INFO - Started process (PID=5138) to work on /opt/airflow/dags/data_pipeline.py
+[2025-02-22T05:46:11.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data_pipeline.py for tasks to queue
+[2025-02-22T05:46:11.004+0000] {logging_mixin.py:190} INFO - [2025-02-22T05:46:11.004+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T05:46:13.554+0000] {logging_mixin.py:190} INFO - [2025-02-22T05:46:13.553+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.9/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-02-22T05:46:14.860+0000] {processor.py:925} INFO - DAG(s) 'data_pipeline' retrieved from /opt/airflow/dags/data_pipeline.py
+[2025-02-22T05:46:14.873+0000] {logging_mixin.py:190} INFO - [2025-02-22T05:46:14.873+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-22T05:46:14.894+0000] {logging_mixin.py:190} INFO - [2025-02-22T05:46:14.894+0000] {dag.py:4180} INFO - Setting next_dagrun for data_pipeline to 2025-02-22 04:00:00+00:00, run_after=2025-02-22 05:00:00+00:00
+[2025-02-22T05:46:14.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data_pipeline.py took 3.917 seconds
