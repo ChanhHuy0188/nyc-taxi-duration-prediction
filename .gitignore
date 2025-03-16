@@ -8,4 +8,3 @@
 airflow/logs/*
 ../airflow/logs/*
 flink/__pycache__/*
-
