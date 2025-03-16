@@ -1,0 +1,10 @@
+*/venv
+*/.env
+*/logs/*
+# Ignore all log files
+*.log
+
+# Ignore logs directory inside airflow
+airflow/logs/*
+../airflow/logs/*
+flink/__pycache__/*
